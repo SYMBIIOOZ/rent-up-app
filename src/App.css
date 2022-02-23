@@ -1,38 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Muli:300,400,600,700');
+
 .App {
+  background-color: #f7f9fc;
+}
+
+h2 {
+  color: #2D3954;
+  font-weight: 600;
+  text-transform: capitalize;
+  font-family: 'Jost', sans-serif;
+}
+
+.featured {
+  padding: 80px 0 50px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.featured h2 {
+  font-size: 35px;
+  line-height: 1.2;
+  margin: 0 0 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.featured p {
+  color: #72809D;
+  font-size: 15px;
+  font-family: 'Muli', sans-serif;
+  font-weight: 400;
+  margin: 0 0 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.property-type-card {
+  position: relative;
+  height: 170px;
+  background: #fff;
+  box-shadow: 0 0 20px 0 rgb(112 121 138 / 18%);
+  -webkit-box-shadow: 0 0 20px 0 rgb(112 121 138 / 18%);
+  border-radius: 6px;
+  text-align: center;
+  padding: 0px 30px;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+  overflow: hidden;
+  transition: .6s linear;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   flex-direction: column;
+}
+
+.property-type-icon {
+  width: 65px;
+  height: 65px;
+  margin: 0.5rem auto 0.5rem;
+  font-size: 20px;
+  background: #f4f5f7;
+  color: #ff7c39;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border-radius: 50%;
+  transition: 0.6s cubic-bezier(0.45, 0.01, 0.1, 1.49);
 }
 
-.App-link {
-  color: #61dafb;
+.property-type-icon.family-house {
+  background-color: rgba(228, 16, 16,0.1);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.property-type-icon.house-and-villa {
+  background-color: rgba(49, 177, 54,0.1);
+}
+
+.property-type-icon.appartment {
+  background-color: rgba(255, 152, 0,0.1);
+}
+
+.property-type-icon.villa-and-condo {
+  background-color: rgba(17, 158, 226,0.1);
+}
+
+.property-type-icon.office-and-studio {
+  background-color: rgba(171, 82, 216,0.1);
 }
